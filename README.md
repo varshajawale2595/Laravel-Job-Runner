@@ -3,10 +3,16 @@
 ## Overview
 Run PHP jobs in the background without Laravel's native queue system.
 
-## Usage
-```php
-runBackgroundJob(App\Jobs\ExampleJob::class, 'run', ['param1', 'param2']);
-```
+Run composer install inside the project folder.
+
+Copy .env.example to .env and run php artisan key:generate.
+
+To test the background job:
+
+php
+Copy
+Edit
+runBackgroundJob(App\Jobs\ExampleJob::class, 'run', ['Hello', 'World']);
 
 ## Configuration
 Edit `config/background-jobs.php` to allow jobs and set retries/delays.
